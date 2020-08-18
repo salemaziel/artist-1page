@@ -1,0 +1,197 @@
+body {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.55) 33%,
+      rgba(0, 0, 0, 0.45) 66%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("../images/music-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+main {
+  margin: 40px auto 25px;
+}
+
+.card-body {
+    padding: 0 1.25rem 1.25rem;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: rgb(195, 40, 48); 
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(195, 40, 48, 0.25);
+}
+
+.card-footer {
+  width: 100%;
+  border-top: 1px solid #e1e4e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-footer a {
+  text-align: center;
+  flex: 1;
+  line-height: 40px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.card-footer a:hover {
+  background: #e6e6e6;
+}
+.card-footer .divider {
+  width: 1px;
+  height: 40px;
+  background: #e1e4e9;
+}
+
+
+#estimate {
+  background: transparent !important;
+  background-color: transparent !important;
+  margin: auto;
+  border: none !important;
+  max-width: 30%;
+  padding: 15px 15px!important;
+}
+ul.actions {
+  list-style: none !important;
+  padding-inline-start: 0;
+}
+
+#iconspace {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: black;
+  fill: black;
+}
+
+#iconspace:hover,
+#iconspace:focus,
+#iconspace:focus-within,
+#iconspace:active {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: white;
+  fill: white;
+}
+
+
+
+.NoDesktop {
+  display: none;
+}
+
+.NoMobile {
+  display: flex;
+}
+
+@media screen and (min-width: 2400px) {
+  .NoDesktop {
+    display: none;
+  }
+
+  .NoMobile {
+    display: flex;  }
+}
+
+@media screen and (max-width: 1680px) {
+  .NoDesktop {
+    display: none;
+  }
+
+  .NoMobile {
+    display: flex;  }
+}
+
+@media screen and (max-width: 1280px) {
+  .NoDesktop {
+    display: none;
+  }
+
+  .NoMobile {
+    display: flex;  }
+}
+
+@media screen and (max-width: 980px) {
+  .NoDesktop {
+    display: block;
+  }
+
+  .NoMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+
+  #estimate {
+    max-width: 80%;
+}
+
+  .NoDesktop {
+    display: block;
+  }
+
+  .NoMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  #estimate {
+    max-width: 100%;
+    box-shadow: 5px 5px 15px 5px black;
+    background-color: white!important;
+    height: 540px;
+}
+
+ul.actions {
+    list-style: none!important;
+    padding-inline-start: 0;
+}
+
+.special {
+    list-style: none!important;
+}
+
+
+  .NoDesktop {
+    display: block;
+  }
+
+  .NoMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .NoDesktop {
+    display: block;
+  }
+
+  .NoMobile {
+    display: none;
+  }
+}

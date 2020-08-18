@@ -1,0 +1,99 @@
+
+
+.front__bkg-photo {
+  position: relative;
+  max-height: 300px;
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-position: 50% 25%;
+}
+
+
+
+.front__text {
+  position: relative;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-size: 18px;
+
+  padding: 5px;
+}
+.front__text .front__text-header {
+  font-weight: 700;
+  color: #0d4d8d;
+  font-size: 1.75rem;
+}
+.front__text .front__text-para {
+  position: relative;
+  top: -5px;
+  color: #c32830;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.front__text .front__text-para svg {
+    margin-right: 5px;
+}
+
+.front__text .front__text-para-body {
+  position: relative;
+  padding: 5px;
+  top: -5px;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  font-weight: 450;
+  font-family: "Montserrat", sans-serif;
+}
+.front__text .front-icons {
+  position: relative;
+  top: 0;
+  font-size: 14px;
+  margin-right: 6px;
+  color: gray;
+}
+
+
+.card-footer {
+  width: 100%;
+  border-top: 1px solid #e1e4e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-footer a {
+  text-align: center;
+  flex: 1;
+  line-height: 40px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.card-footer a:hover {
+  background: #e6e6e6;
+}
+.card-footer .divider {
+  width: 1px;
+  height: 40px;
+  background: #e1e4e9;
+}
+
+#estimate {
+  background: transparent !important;
+  background-color: transparent !important;
+  margin: auto;
+  border: none !important;
+  max-width: 30%;
+  padding: 0 15px!important;
+}
+ul.actions {
+  list-style: none !important;
+  padding-inline-start: 0;
+}

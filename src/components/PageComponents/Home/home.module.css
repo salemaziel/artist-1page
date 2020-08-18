@@ -1,0 +1,89 @@
+.bannerPhoto{
+  position: relative;
+  max-height: 300px;
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-position: 50% 75%;
+  background-image: url('../../../images/3pics-musicbanner.png');
+
+}
+
+.frontText {
+  position: relative;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-size: 18px;
+  padding: 5px;
+}
+
+.frontTextHeader {
+  font-weight: 700;
+  color: #0d4d8d;
+  font-size: 1.75rem;
+}
+
+.frontTextLocation {
+  position: relative;
+  top: 0px;
+  color: #c32830;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.frontTextBody {
+  position: relative;
+  padding: 5px;
+  top: -5px;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  font-weight: 450;
+  font-family: "Montserrat", sans-serif;
+}
+
+.frontTextBody svg {
+  margin-right: 5px;
+}
+
+.Icon {
+  margin: 0 auto -7px auto;
+  font-size: 1.5rem;
+}
+
+.LogoBox {
+  width: 175px;
+  height: 175px;
+  border: 2px white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: -5rem auto auto auto;
+  position: relative;
+  padding: 15px 15px;
+  background-color: white;
+}
+
+.Logo {
+  width: 100%;
+  border-radius: 20%;
+  position: relative;
+  padding: 5px;
+}
+
+.LogoWords {
+    width: 100%;
+    position: relative;
+    margin: -4rem auto;
+    padding: 0 4rem;
+    border: 1px solid transparent;
+    border-radius: 100%;
+}
+
+.CardStyle {
+    text-align: center;
+    box-shadow: 5px 5px 15px 5px black;
+}
