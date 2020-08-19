@@ -11,6 +11,8 @@ export const BlueRedPipeWrench = require('./blue-red-pipewrench.jpg');
 //export const YourLogo = require('./Your-Logo.png');
 //export const YourLogo2 = require('./Your-Logo2.png');
 export const LogoPlaceholder = require('./logo-placeholder.png');
+export const LogoPlaceholderNoBg = require('./logo-placehold-nobg.png');
+
 
 
 
