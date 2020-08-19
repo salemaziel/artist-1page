@@ -5,14 +5,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import {
-  Bg_jpg,
-  LogoHelmet1_jpg,
-  LogoWords1_png,
   LogoPlaceholder,
 } from "../../../images/index";
 
-import { MdLocationOn } from "react-icons/md";
-import { FaEnvelope } from "react-icons/fa";
 
 import EstimateModal from "../../estimateModal";
 import SignUpModal from "../../signupModal";
@@ -23,8 +18,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaSnapchat,
-  FaLinkedinIn,
-  FaBandcamp,
+  FaYoutube
 } from "react-icons/fa";
 
 const HomeCard = () => (
@@ -57,8 +51,8 @@ const HomeCard = () => (
                 <FaSnapchat id="socialiconspace" style={{fill: 'black'}}/>
               </a>
 
-              <a href="https://linkedin.com/">
-                <FaLinkedinIn id="socialiconspace" style={{fill: 'black'}}/>
+              <a href="https://youtube.com/">
+                <FaYoutube id="socialiconspace" style={{fill: 'black'}}/>
               </a>
             </Col>
           </Row>

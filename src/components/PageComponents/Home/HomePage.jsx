@@ -16,7 +16,7 @@ const HomePage = () => (
       <Row>
         <Col className="NoMobile"  xs={3} />
         <Col>
-        <Fade cascade ssrReveal>
+        <Fade ssrFadeout>
 
             <HomeCard />
             </Fade>

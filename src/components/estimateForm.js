@@ -1,9 +1,9 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
+//import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import { navigate } from "gatsby";
+//import { navigate } from "gatsby";
 
 import estimateformStyles from "./estimateform.module.css";
 
@@ -208,7 +208,6 @@ export default function EstimateForm() {
                 <Button
                   type="submit"
                   value="Send Message"
-                  className="special"
                   className={estimateformStyles.estimateSubmit}
                   onChange={handleSubmit}
                 >

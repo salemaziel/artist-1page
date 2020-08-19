@@ -3,9 +3,7 @@ import React from "react";
 
 import Modal from "react-modal";
 
-import { 
-MdChat
-} from 'react-icons/md'
+
 import { FaEnvelope } from "react-icons/fa";
 
 import SignUpForm from "./signupForm";

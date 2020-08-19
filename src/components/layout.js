@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './layout.css'
 import Header from "./header";
+import Footer from './footer'
 
 
 
@@ -32,9 +33,7 @@ const Layout = ({ children }) => {
       <main >
         {children}
       </main>
-      <footer className="" style={{display: 'none'}}>
-
-      </footer>
+      <Footer />
     </>
   );
 };
