@@ -12,6 +12,7 @@ import Fade from "react-reveal/Fade";
 
 const HomePage = () => (
   <>
+  <section className="sectionWrap">
     <Container >
       <Row>
         <Col className="NoMobile"  xs={3} />
@@ -25,6 +26,7 @@ const HomePage = () => (
         <Col className="NoMobile" xs={3}/>
       </Row>
     </Container>
+    </section>
   </>
 );
 

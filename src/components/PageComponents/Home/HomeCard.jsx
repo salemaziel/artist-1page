@@ -35,8 +35,8 @@ const HomeCard = () => (
           </div>
         </Card.Title>
         <Card.Text>
-          <div style={{ margin: "auto" }} />
-          <p className={homeStyles.frontTextBody}>Artist BioLink</p>
+          {/*<div style={{ margin: "1rem auto 0"}} >*/}
+          {/*<p className={homeStyles.frontTextBody}>Artist BioLink</p>*/}
           <Row>
             <Col>
               <a href="https://facebook.com/">
@@ -56,6 +56,7 @@ const HomeCard = () => (
               </a>
             </Col>
           </Row>
+         {/*} </div>*/}
           <BioButtons />
           {/*<p className={homeStyles.frontTextBody}>
             {" "}

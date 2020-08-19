@@ -117,6 +117,9 @@ ul.actions {
 
 }
 
+.sectionWrap {
+  margin: 8% auto;
+}
 
 .NoDesktop {
   display: none;
@@ -224,6 +227,10 @@ ul.actions {
 
 .special {
     list-style: none!important;
+}
+
+.sectionWrap {
+  margin: 25% auto;
 }
 
 

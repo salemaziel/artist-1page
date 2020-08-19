@@ -77,7 +77,7 @@
 .LogoWords {
     width: 100%;
     position: relative;
-    margin: -4rem auto;
+    margin: -4rem auto 10px;
     padding: 0 4rem;
     border: 1px solid transparent;
     border-radius: 100%;

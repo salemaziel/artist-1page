@@ -21,6 +21,10 @@ const Buttonz = styled.Button = styled.a`
   -o-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
   box-shadow: 5px 5px 8px 2px gray;
+  @media screen and (max-width:480px){
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
   
   &:hover {
     text-decoration:none;
