@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { navigate } from "gatsby";
 
-import estimateformStyles from "./estimateform.module.css";
+import signupformStyles from "./estimateform.module.css";
 
 ///const EstimateForm = (props) => (
 
@@ -15,7 +15,7 @@ function encode(data) {
     .join("&");
 }
 
-export default function EstimateForm() {
+export default function SignUpForm() {
   const [state, setState] = React.useState({});
 
   const handleChange = e => {
@@ -42,28 +42,28 @@ export default function EstimateForm() {
 
   return (
     <>
-      <div className={estimateformStyles.formBox}>
+      <div className={signupformStyles.formBox}>
         <div className="item-heading">
-          <h3 className={estimateformStyles.title}>Contact Form</h3>
+          <h3 className={signupformStyles.title}>Sign Up Form</h3>
         </div>
         <form
-          name="EstimateForm"
+          name="SignUPForm"
           method="post"
           action="/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
           <input type="hidden" name="bot-field" />
-          <input type="hidden" name="form-name" value="EstimateForm" />
+          <input type="hidden" name="form-name" value="SignUpForm" />
 
           <Form.Row>
             <Col>
-              <Form.Group controlId="estimateFirstName">
+              <Form.Group controlId="signupName">
                 {/*<Form.Label>First name</Form.Label>*/}
                 <Form.Control
                   required
                   type="text"
-                  placeholder="First Name"
+                  placeholder="Name"
                   onChange={handleChange}
                 />
               </Form.Group>
@@ -84,25 +84,24 @@ export default function EstimateForm() {
                   onClick={handleChange}
                 />
               </Form.Group>*/}
-              <Form.Group controlId="estimateLastName">
-                {/*<Form.Label>First name</Form.Label>*/}
+              {/*<Form.Group controlId="estimateLastName">
+                {/*<Form.Label>First name</Form.Label>* /}
                 <Form.Control 
-                required 
                 type="text" 
                 placeholder="Last Name" 
                 onChange={handleChange}
                 />
-              </Form.Group>
+            </Form.Group>*/}
             </Col>
           </Form.Row>
 
           <Form.Row>
             <Col>
-              <Form.Group controlId="estimateEmail">
+              <Form.Group controlId="signupEmail">
                 {/*<Form.Label>Email address</Form.Label>*/}
                 <Form.Control 
                 type="email" 
-                placeholder="Email address" 
+                placeholder="Email address (Required)" 
                 onChange={handleChange}
                 />
               </Form.Group>
@@ -111,10 +110,10 @@ export default function EstimateForm() {
           <Form.Row>
             <Col>
 
-              <Form.Group controlId="estimatePhone">
+              <Form.Group controlId="signupPhone">
                 {/*<Form.Label>First name</Form.Label>*/}
                 <Form.Control 
-                required type="tel" 
+                type="tel" 
                 placeholder="Phone" 
                 onChange={handleChange}
                 />
@@ -188,10 +187,10 @@ export default function EstimateForm() {
               </Form.Group>*/}
             </Col>
           </Form.Row>
-          <Form.Row>
+          {/*<Form.Row>
             <Col>
               <Form.Group controlId="exampleForm.ControlTextarea1">
-                {/*<Form.Label>Job Details</Form.Label>*/}
+                {/*<Form.Label>Job Details</Form.Label>* /}
                 <Form.Control 
                 as="textarea" 
                 rows="3" 
@@ -200,7 +199,7 @@ export default function EstimateForm() {
                 />
               </Form.Group>
             </Col>
-          </Form.Row>
+          </Form.Row>*/}
 
           <Form.Group>
             <ul className="actions">
@@ -209,10 +208,10 @@ export default function EstimateForm() {
                   type="submit"
                   value="Send Message"
                   className="special"
-                  className={estimateformStyles.estimateSubmit}
+                  className={signupformStyles.estimateSubmit}
                   onChange={handleSubmit}
                 >
-                  Submit{" "}
+                  Sign Up{" "}
                 </Button>
               </li>
             </ul>

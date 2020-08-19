@@ -73,6 +73,17 @@ main {
   max-width: 30%;
   padding: 15px 15px!important;
 }
+
+#signup {
+  background: transparent !important;
+  background-color: transparent !important;
+  margin: auto;
+  border: none !important;
+  max-width: 30%;
+  padding: 15px 15px!important;
+}
+
+
 ul.actions {
   list-style: none !important;
   padding-inline-start: 0;
@@ -80,9 +91,7 @@ ul.actions {
 
 #iconspace {
   font-size: 1.5rem;
-  margin-right: 10px;
-  color: black;
-  fill: black;
+  margin: auto 15px auto 0;
 }
 
 #iconspace:hover,
@@ -90,11 +99,21 @@ ul.actions {
 #iconspace:focus-within,
 #iconspace:active {
   font-size: 1.5rem;
-  margin-right: 10px;
-  color: white;
-  fill: white;
+  margin: auto 15px auto 0;
 }
 
+#socialiconspace {
+  margin: auto 15px;
+  font-size: 2rem;
+}
+
+#socialiconspace:hover,
+#socialiconspace:focus,
+#socialiconspace:focus-within,
+#socialiconspace:active {
+  margin: auto 15px;
+
+}
 
 
 .NoDesktop {
@@ -115,6 +134,24 @@ ul.actions {
 }
 
 @media screen and (max-width: 1680px) {
+  #estimate {
+    background: transparent !important;
+    background-color: transparent !important;
+    margin: auto;
+    border: none !important;
+    max-width: 50%;
+    padding: 15px 15px!important;
+  }
+  
+  #signup {
+    background: transparent !important;
+    background-color: transparent !important;
+    margin: auto;
+    border: none !important;
+    max-width: 50%;
+    padding: 15px 15px!important;
+  }
+  
   .NoDesktop {
     display: none;
   }
@@ -149,6 +186,10 @@ ul.actions {
     max-width: 80%;
 }
 
+#signup {
+  max-width: 80%;
+}
+
   .NoDesktop {
     display: block;
   }
@@ -165,6 +206,13 @@ ul.actions {
     box-shadow: 5px 5px 15px 5px black;
     background-color: white!important;
     height: 540px;
+}
+
+#signup {
+  max-width: 100%;
+  box-shadow: 5px 5px 15px 5px black;
+  background-color: white!important;
+  height: 540px;
 }
 
 ul.actions {

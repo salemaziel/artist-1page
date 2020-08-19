@@ -93,6 +93,15 @@
   max-width: 30%;
   padding: 0 15px!important;
 }
+
+#signup {
+  background: transparent !important;
+  background-color: transparent !important;
+  margin: auto;
+  border: none !important;
+  max-width: 30%;
+  padding: 0 15px!important;
+}
 ul.actions {
   list-style: none !important;
   padding-inline-start: 0;

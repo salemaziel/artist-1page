@@ -12,22 +12,22 @@ const BioButtons = () => (
 <Container>
 <Row>
 <Col>
-<Buttonz as={Link} to="#" className="">
+<Buttonz spotify href="https://spotify.com" className="" >
     <FaSpotify id="iconspace"/>
 Spotify
 </Buttonz>
 <br />
-<Buttonz as={Link} to="#" className="">
+<Buttonz soundcloud  href="https://soundcloud.com" className="" >
     <FaSoundcloud id="iconspace"/>
 SoundCloud
 </Buttonz>
 <br />
-<Buttonz as={Link} to="#" className="">
+<Buttonz apple  href="https://www.apple.com/apple-music/" className="" >
     <FaApple id="iconspace"/>
 Apple Music
 </Buttonz>
 <br />
-<Buttonz as={Link} to="#" className="">
+<Buttonz shop as={Link} to="#" className="" >
     <FaShoppingCart id="iconspace"/>
 Shop Merch
 </Buttonz>

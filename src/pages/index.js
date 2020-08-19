@@ -5,7 +5,7 @@ import HomePage from '../components/PageComponents/Home/HomePage'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Spartan Plumbing Services and Repairs" />
+    <SEO title="Artist Promotion Demo" />
     <HomePage />
 
   </Layout>

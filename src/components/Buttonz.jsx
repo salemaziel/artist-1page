@@ -6,124 +6,62 @@ const Buttonz = styled.Button = styled.a`
   display: inline-block;
   background: rgba(0,0,0,0.05);
   border-radius: 5px;
-  border: 2px solid gray;
+  border: 2px solid black;
   color: black;
-  margin: 1em auto;
+  margin: auto auto 15px auto;
   padding: 0.75em 2em;
   text-transform: uppercase;
-  text-shadow: 2px 2px 4px #000000;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.65);
   width: 100%;
-  
-  &:hover {
-    text-decoration:none;
-    color: white;
-    background: rgba(0,0,0,0.05);
-    background-color: black;
-    border-radius: 3px;
-    border: 2px solid #gray;
-    text-shadow: 1px 1px 3px #000000;
-    fill: white;
-  }
-
-  ${props => props.primary && css`
-    background:#ffc259;
-    color: white!important;
-    padding: 0.5em 3em;
-    &:hover {
-      text-decoration:none;
-      color: white;
-      background: #facd51;
-    }
-  `}
-
-  ${props => props.campaign && css`
-  background:#ffc259;
-  color: white!important;
-  padding: 0.5em 1em;
+  font-size: 1.5rem;
   -webkit-transition: 0.3s all ease-in-out;
   -o-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
+  box-shadow: 5px 5px 8px 2px gray;
+  
   &:hover {
     text-decoration:none;
-    color: white;
-    background: #facd51;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.65);
     -webkit-transition: 0.3s all ease-in-out;
     -o-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
+    box-shadow: 5px 5px 15px 5px #2f2929;
+    border-color: white;
+  }
+
+  ${props => props.spotify && css`
+  margin: 15px auto 15px auto;
+  border: 2px solid black;
+  width: 100%;
+    &:hover {
+      background: rgba(27,215,95,1);
+      color: black;
+    }
+  `}
+
+  ${props => props.soundcloud && css`
+
+    &:hover {
+      background: #F66F0E;
+      color: black;
   }
 `}
 
-  ${props => props.donateblk && css`
-    background:#ffc259;
-    color: orange;
-    border: 2px solid #ffc259;
-    display: inline-block;
-      &:hover {
-    text-decoration:none;
-    color: orange;
-    backgroundColor: #facd51;
-    border-radius: 3px;
-    border: 2px solid #facd51;
-    text-shadow: 1px 1px 3px #000000;
+  ${props => props.apple && css`
+
+    &:hover {
+    background: black;
+    color: white;
   }
   `}
-  ${props => props.nav && css`
-    background:#ffc259;
-    color: #FFF;
-    padding: 0.5em 3em;
+  ${props => props.shop && css`
+
     &:hover {
-      text-decoration:none;
+      background: #bf2515;
       color: white;
-      font-weight: 900;
-    }
-  `}
-  ${props => props.synergy && css`
-    display: inline-block;
-    background:#ffc259;
-    color: #FFF!important;
-    margin: 0px;
-    font-weight:400;
-    padding: 0.5em 1.5em;
-    text-shadow: 2px 2px 4px #000000;
-    -webkit-transition: 0.3s all ease-in-out;
-    -o-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out;
-    word-break: none; 
-    &:hover {
-      text-decoration:none;
-      margin: 0px;
-      color: white;
-      font-weight: 500;
-      -webkit-transition: 0.3s all ease-in-out;
-      -o-transition: 0.3s all ease-in-out;
-      transition: 0.3s all ease-in-out;
-      padding: 0.5em 1.5em;
-      text-shadow: 2px 2px 4px #000000;
-    }
-  `}
-  ${props => props.covid19 && css`
-    display: inline-block;
-    margin: 0px;
-    background:#ff0303;
-    background-color:#ff0303;
-    color: #FFF!important;
-    padding: 0.5em 1.5em;
-    font-weight:400;
-    text-shadow: 2px 2px 4px #000000;
-    -webkit-transition: 0.3s all ease-in-out;
-    -o-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out;
-    word-break: none; 
-    &:hover {
-      margin: 0px;
-      text-decoration:none;
-      color: white;
-      font-weight: 500;
-      padding: 0.5em 1.5em;
-      -webkit-transition: 0.3s all ease-in-out;
-      -o-transition: 0.3s all ease-in-out;
-      transition: 0.3s all ease-in-out;
-      text-shadow: 2px 2px 4px #000000;
     }
   `}
 
