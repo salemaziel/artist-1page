@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "salemaziel <contact@salemaziel.com>",
   "dependencies": {
+    "@blackbox-vision/react-particles": "^1.2.0",
     "babel-plugin-styled-components": "^1.11.1",
     "bootstrap": "^4.4.1",
     "gatsby": "^2.20.12",

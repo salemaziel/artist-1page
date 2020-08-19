@@ -20,9 +20,15 @@ import {
   FaSnapchat,
   FaYoutube
 } from "react-icons/fa";
+import ParticlesJs from "./particles";
+
 
 const HomeCard = () => (
+  <ParticlesJs>
   <Card className={homeStyles.CardStyle}>
+    
+      
+
     <Card.Img variant="top" className={homeStyles.bannerPhoto} />
     {/*<div className={homeStyles.LogoBox}>
         <img src={LogoHelmet1_jpg} className={homeStyles.Logo} />
@@ -74,6 +80,7 @@ const HomeCard = () => (
       <EstimateModal />
     </Card.Footer>
   </Card>
+  </ParticlesJs>
 );
 
 export default HomeCard;
