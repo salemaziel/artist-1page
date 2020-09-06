@@ -71,7 +71,7 @@ main {
   margin: auto;
   border: none !important;
   max-width: 30%;
-  max-height: 85%;
+  max-height: none;
   padding: 15px 15px!important;
 }
 
@@ -217,7 +217,7 @@ ul.actions {
   max-width: 100%;
   box-shadow: 5px 5px 15px 5px black;
   background-color: white!important;
-  height: 540px;
+  height: 340px;
 }
 
 ul.actions {

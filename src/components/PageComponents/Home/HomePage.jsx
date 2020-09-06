@@ -15,15 +15,15 @@ const HomePage = () => (
   <section className="sectionWrap">
     <Container >
       <Row>
-        <Col className="NoMobile"  xs={3} />
+        {/*<Col className="NoMobile"  xs={3} />*/}
         <Col>
-        <Fade ssrFadeout>
+        <Fade ssrReveal>
 
             <HomeCard />
             </Fade>
 
         </Col>
-        <Col className="NoMobile" xs={3}/>
+        {/*<Col className="NoMobile"  xs={3} />*/}
       </Row>
     </Container>
     </section>

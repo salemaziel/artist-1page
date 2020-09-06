@@ -42,7 +42,7 @@ const Buttonz = styled.Button = styled.a`
   width: 100%;
     &:hover {
       background: rgba(27,215,95,1);
-      color: black;
+      color: white;
     }
   `}
 
@@ -50,7 +50,7 @@ const Buttonz = styled.Button = styled.a`
 
     &:hover {
       background: #F66F0E;
-      color: black;
+      color: white;
   }
 `}
 

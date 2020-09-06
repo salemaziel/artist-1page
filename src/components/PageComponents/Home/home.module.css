@@ -86,4 +86,12 @@
 .CardStyle {
     text-align: center;
     box-shadow: 5px 5px 15px 5px black;
+    width: max-content;
+    margin: auto;
+}
+
+@media screen and (max-width: 480px){
+  .CardStyle{
+    width: auto;
+  }
 }
