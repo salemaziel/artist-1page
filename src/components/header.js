@@ -13,9 +13,12 @@ const Header = ({ siteTitle }) => (
       height={52}
       dark
       style={{
-        display: "fixed",
-        position: "relative",
+        display: "inline",
+        position: "fixed",
         zIndex: "20",
+        top: 0,
+        left: 0,
+        right: 0,
       }}
     />
   </>

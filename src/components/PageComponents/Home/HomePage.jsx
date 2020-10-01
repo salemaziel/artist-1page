@@ -14,16 +14,14 @@ const HomePage = () => (
   <>
   <section className="sectionWrap">
     <Container >
-      <Row>
-        <Col className="NoMobile"  xs={3} />
-        <Col>
+      <Row className="justify-content-center">
+        <Col /*xs={12}*/ sm={6} /*md={4}*/ >
         <Fade ssrFadeout>
 
             <HomeCard />
             </Fade>
 
         </Col>
-        <Col className="NoMobile" xs={3}/>
       </Row>
     </Container>
     </section>
