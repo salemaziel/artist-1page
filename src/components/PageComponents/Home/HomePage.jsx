@@ -15,7 +15,7 @@ const HomePage = () => (
   <section className="sectionWrap">
     <Container >
       <Row className="justify-content-center">
-        <Col xs={12} sm={6} md={8} lg={10}>
+        <Col xs={12} sm={6} md={8} lg={8}>
         <Fade ssrFadeout>
 
             <HomeCard />
