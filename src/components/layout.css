@@ -185,7 +185,9 @@ ul.actions {
 }
 
 @media screen and (max-width: 780px) {
-
+  .sectionWrap {
+    margin-top: 12%;
+  }
 
   #estimate {
     max-width: 80%;
