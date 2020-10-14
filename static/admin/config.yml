@@ -1,0 +1,27 @@
+
+backend:
+  name: github
+  repo: salemaziel/artist-1page
+  branch: master
+media_folder: static/assets/images
+public_folder: /assets
+collections:
+  - name: CustomConfiguration
+    label: Configuration
+    files:
+      - label: "Change Logos and Links"
+        name: "customization"
+        file: "site/customization.yml"
+        fields:
+          - {label: "Background Photo", name: "background-photo", widget: image}
+          - {label: "Top Photo", name: "top-photo", widget: image}
+          - {label: "Logo Image", name: "logo-image", widget: image}
+          - {label: "facebook link", name: "facebook-link", widget: string}
+          - {label: "snapchat link", name: "snapchat-link", widget: string}
+          - {label: "spotify link", name: "spotify-link", widget: string}
+          - {label: "instagram link", name: "instagram-link", widget: string}
+          - {label: "youtube link", name: "youtube-link", widget: string}
+          - {label: "soundcloud link", name: "soundcloud-link", widget: string}
+          - {label: "apple-music link", name: "apple-music-link", widget: string}
+          - {label: "shop link", name: "shop-link", widget: string}
+          
