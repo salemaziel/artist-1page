@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql, StaticQuery } from 'gatsby';
 import homeStyles from "./home.module.css";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
@@ -21,9 +22,11 @@ import {
   FaYoutube
 } from "react-icons/fa";
 
-const HomeCard = () => (
+const HomeCard = ({data}) => (
+  
   <Card className={homeStyles.CardStyle}>
-    <Card.Img variant="top" className={homeStyles.bannerPhoto} />
+    
+    <Card.Img variant="top"  className={homeStyles.bannerPhoto} style={{"backgroundImage":`url('${data.siteYaml.top_photo}')`}}  />
     {/*<div className={homeStyles.LogoBox}>
         <img src={LogoHelmet1_jpg} className={homeStyles.Logo} />
 </div>*/}
@@ -31,7 +34,7 @@ const HomeCard = () => (
       <div className={homeStyles.frontText}>
         <Card.Title className={homeStyles.frontTextHeader}>
           <div className="w-100">
-            <img src={LogoPlaceholder} className={homeStyles.LogoWords} />
+            <img src={data.siteYaml.logo_image} className={homeStyles.LogoWords} />
           </div>
         </Card.Title>
         <Card.Text>
@@ -39,25 +42,25 @@ const HomeCard = () => (
           {/*<p className={homeStyles.frontTextBody}>Artist BioLink</p>*/}
           <Row>
             <Col>
-              <a href="https://facebook.com/">
+              <a href={data.siteYaml.facebook_url}>
                 <FaFacebook id="socialiconspace" style={{fill: 'black'}}/>
               </a>
 
-              <a href="https://instagram.com/">
+              <a href={data.siteYaml.instagram_url}>
                 <FaInstagram id="socialiconspace" style={{fill: 'black'}}/>
               </a>
 
-              <a href="https://snapchat.com/">
+              <a href={data.siteYaml.snapchat_url}>
                 <FaSnapchat id="socialiconspace" style={{fill: 'black'}}/>
               </a>
 
-              <a href="https://youtube.com/">
+              <a href={data.siteYaml.youtube_url}>
                 <FaYoutube id="socialiconspace" style={{fill: 'black'}}/>
               </a>
             </Col>
           </Row>
          {/*} </div>*/}
-          <BioButtons />
+          <BioButtons  data={data}/>
           {/*<p className={homeStyles.frontTextBody}>
             {" "}
             Lorem ipsum dolor sit amet
@@ -76,5 +79,25 @@ const HomeCard = () => (
     </Card.Footer>
   </Card>
 );
+let indexQuery = graphql`
+  query {
+    siteYaml {
+      facebook_link
+      apple_music_link
+      background_photo
+      instagram_link
+      logo_image
+      shop_link
+      snapchat_link
+      soundcloud_link
+      spotify_link
+      top_photo
+      youtube_link
+    }
+  }
+`;
 
-export default HomeCard;
+
+export default (props)=> (<StaticQuery query={indexQuery} render={data => (
+  <HomeCard  data={data}  />
+)}></StaticQuery>);

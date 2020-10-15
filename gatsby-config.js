@@ -3,7 +3,7 @@ module.exports = {
     title: `Artist BioLink`,
     description: `Artist BioLink`,
     author: `@salemaziel`,
-    siteUrl: `https://kontact.link`
+    siteUrl: `https://kontact.link`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,29 +14,53 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./site/customization.yml`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://salemaziel.com',
-        sitemap: 'https://kontact.link/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        host: "https://salemaziel.com",
+        sitemap: "https://kontact.link/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
     },
-    { 
+    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true, // Print removed selectors and processed file names
         develop: true, // Enable while using `gatsby develop`
         // tailwind: true, // Enable tailwindcss support
-        whitelist: ['body.is-preload *',' body.is-preload *:before',' body.is-preload *:after','NoDesktop'], // Don't remove this selector
-         whitelistPatterns: [/btn/, /container/, /row/, /col/, /card/, /body/, /form/, /input/, /NoDesktop/, /is-preload/ ]
+        whitelist: [
+          "body.is-preload *",
+          " body.is-preload *:before",
+          " body.is-preload *:after",
+          "NoDesktop",
+        ], // Don't remove this selector
+        whitelistPatterns: [
+          /btn/,
+          /container/,
+          /row/,
+          /col/,
+          /card/,
+          /body/,
+          /form/,
+          /input/,
+          /NoDesktop/,
+          /is-preload/,
+        ],
         // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
         // purgeOnly : ['bootstrap/'], // Purge only these files/folders
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
