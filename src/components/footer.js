@@ -11,9 +11,9 @@ const Footer = () => (
         <div className={footerStyles.content}>
           <div className={footerStyles.inner}>
             <section className={footerStyles.about}>
-              <h3>Button to Link</h3>
+              <h3>Optional Button to Link</h3>
               <p>
-               A link to something else on your site, or linking to another site.
+               An optional link to anywhere you'd like.
               </p>
               <ul className={footerStyles.actions}>
                 <li>

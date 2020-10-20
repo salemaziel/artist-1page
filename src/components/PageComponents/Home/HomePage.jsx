@@ -13,13 +13,13 @@ import Fade from "react-reveal/Fade";
 
 const HomePage = ({data}) => (
   <>
-  <section style={{"backgroundImage":`linear-gradient(
+  <section /*style={{"backgroundImage":`linear-gradient(
       to top,
       rgba(0, 0, 0, 0.55) 33%,
       rgba(0, 0, 0, 0.45) 66%,
       rgba(0, 0, 0, 0.25) 100%
     ),
-    url('${data.siteYaml.background_photo}')`}} className="sectionWrap">
+    url('${data.siteYaml.background_photo}')`}}*/ className="sectionWrap">
     <Container >
       <Row className="justify-content-center">
         <Col xs={12} sm={6} md={8} lg={6}>
