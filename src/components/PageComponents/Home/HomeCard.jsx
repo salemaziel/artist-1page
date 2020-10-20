@@ -42,19 +42,19 @@ const HomeCard = ({data}) => (
           {/*<p className={homeStyles.frontTextBody}>Artist BioLink</p>*/}
           <Row>
             <Col>
-              <a href={data.siteYaml.facebook_url}>
+              <a href={data.siteYaml.facebook_link}>
                 <FaFacebook id="socialiconspace" style={{fill: 'black'}}/>
               </a>
 
-              <a href={data.siteYaml.instagram_url}>
+              <a href={data.siteYaml.instagram_link}>
                 <FaInstagram id="socialiconspace" style={{fill: 'black'}}/>
               </a>
 
-              <a href={data.siteYaml.snapchat_url}>
+              <a href={data.siteYaml.snapchat_link}>
                 <FaSnapchat id="socialiconspace" style={{fill: 'black'}}/>
               </a>
 
-              <a href={data.siteYaml.youtube_url}>
+              <a href={data.siteYaml.youtube_link}>
                 <FaYoutube id="socialiconspace" style={{fill: 'black'}}/>
               </a>
             </Col>
