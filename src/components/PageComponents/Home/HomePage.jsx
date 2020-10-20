@@ -23,10 +23,8 @@ const HomePage = ({data}) => (
     <Container >
       <Row className="justify-content-center">
         <Col xs={12} sm={6} md={8} lg={6}>
-        <Fade bottom>
 
             <HomeCard />
-            </Fade>
 
         </Col>
       </Row>
