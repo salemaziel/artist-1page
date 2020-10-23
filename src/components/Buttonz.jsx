@@ -43,6 +43,7 @@ const Buttonz = styled.Button = styled.a`
     &:hover {
       background: rgba(27,215,95,1);
       color: black;
+      text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
     }
   `}
 
@@ -51,6 +52,7 @@ const Buttonz = styled.Button = styled.a`
     &:hover {
       background: #F66F0E;
       color: black;
+      text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
   }
 `}
 
@@ -61,6 +63,25 @@ const Buttonz = styled.Button = styled.a`
     color: white;
   }
   `}
+
+  ${props => props.youtubemusic && css`
+
+    &:hover {
+      background: #FF0000;
+      color: white;
+  }
+`}
+
+
+${props => props.tidal && css`
+
+&:hover {
+background: black;
+color: #00FFFF;
+}
+`}
+
+
   ${props => props.shop && css`
 
     &:hover {

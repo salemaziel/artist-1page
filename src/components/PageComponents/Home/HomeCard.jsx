@@ -19,8 +19,11 @@ import {
   FaFacebook,
   FaInstagram,
   FaSnapchat,
-  FaYoutube
+  FaYoutube,
 } from "react-icons/fa";
+
+import { SiTiktok } from 'react-icons/si'
+
 
 const HomeCard = ({data}) => (
   
@@ -54,8 +57,11 @@ const HomeCard = ({data}) => (
                 <FaSnapchat id="socialiconspace" style={{fill: 'black'}}/>
               </a>
 
-              <a href={data.siteYaml.youtube_link}>
+              {/*<a href={data.siteYaml.youtube_link}>
                 <FaYoutube id="socialiconspace" style={{fill: 'black'}}/>
+</a>*/}
+              <a href={data.siteYaml.tiktok_link}>
+                <SiTiktok id="socialiconspace" style={{fill: 'black'}}/>
               </a>
             </Col>
           </Row>
@@ -91,8 +97,11 @@ let indexQuery = graphql`
       snapchat_link
       soundcloud_link
       spotify_link
+      tiktok_link
+      tidal_link
       top_photo
       youtube_link
+      youtube_music_link
     }
   }
 `;

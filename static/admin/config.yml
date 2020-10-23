@@ -23,5 +23,8 @@ collections:
           - {label: "youtube link", name: "youtube-link", widget: string}
           - {label: "soundcloud link", name: "soundcloud-link", widget: string}
           - {label: "apple-music link", name: "apple-music-link", widget: string}
+          - {label: "youtube-music link", name: "youtube-music-link", widget: string}
+          - {label: "tiktok link", name: "tiktok-link", widget: string}
+          - {label: "tidal link", name: "tidal-link", widget: string}
           - {label: "shop link", name: "shop-link", widget: string}
           

@@ -44,8 +44,11 @@ let indexQuery = graphql`
       snapchat_link
       soundcloud_link
       spotify_link
+      tiktok_link
+      tidal_link
       top_photo
       youtube_link
+      youtube_music_link
     }
   }
 `;
