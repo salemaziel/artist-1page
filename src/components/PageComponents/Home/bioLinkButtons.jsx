@@ -4,8 +4,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 //import Button from 'react-bootstrap/Button'
 import Buttonz from '../../Buttonz'
-import { FaApple, FaSpotify, FaSoundcloud, FaShoppingCart, FaYoutubeSquare  } from 'react-icons/fa'
-import { SiTidal } from 'react-icons/si'
+import { FaApple, FaSpotify, FaSoundcloud, FaShoppingCart, FaYoutubeSquare  } from 'react-icons/fa';
+import { SiTidal } from "react-icons/si";
 import { Link } from 'gatsby'
 
 const BioButtons = ({data}) => (

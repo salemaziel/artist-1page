@@ -23,7 +23,7 @@ import {
 } from "react-icons/fa";
 
 
-import { SiTiktok } from 'react-icons/si'
+import { SiTiktok } from 'react-icons/si';
 
 
 const HomeCard = ({data}) => (
