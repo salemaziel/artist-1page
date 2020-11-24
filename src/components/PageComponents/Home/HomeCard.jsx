@@ -21,6 +21,7 @@ import {
   FaSnapchat,
   FaYoutube,
 } from "react-icons/fa";
+import Fade from 'react-reveal/Fade'
 
 
 import { SiTiktok } from 'react-icons/si';
@@ -38,32 +39,37 @@ const HomeCard = ({data}) => (
       <div className={homeStyles.frontText}>
         <Card.Title className={homeStyles.frontTextHeader}>
           <div className="w-100">
+            <Fade top>
             <img src={data.siteYaml.logo_image} className={homeStyles.LogoWords} />
+            </Fade>
           </div>
         </Card.Title>
+        <Fade top cascade>
         <Card.Text>
           {/*<div style={{ margin: "1rem auto 0"}} >*/}
           {/*<p className={homeStyles.frontTextBody}>Artist BioLink</p>*/}
           <Row>
             <Col>
-              <a href={data.siteYaml.facebook_link}>
-                <FaFacebook id="socialiconspace" style={{fill: 'black'}}/>
+           
+              <a href={data.siteYaml.facebook_link} className={homeStyles.facebook}>
+                <FaFacebook id="socialiconspace"/>
               </a>
 
-              <a href={data.siteYaml.instagram_link}>
-                <FaInstagram id="socialiconspace" style={{fill: 'black'}}/>
+              <a href={data.siteYaml.instagram_link} className={homeStyles.instagram}>
+                <FaInstagram id="socialiconspace" />
               </a>
 
-              <a href={data.siteYaml.snapchat_link}>
-                <FaSnapchat id="socialiconspace" style={{fill: 'black'}}/>
+              <a href={data.siteYaml.snapchat_link} className={homeStyles.snapchat}>
+                <FaSnapchat id="socialiconspace" />
               </a>
 
               {/*<a href={data.siteYaml.youtube_link}>
                 <FaYoutube id="socialiconspace" style={{fill: 'black'}}/>
 </a>*/}
-              <a href={data.siteYaml.tiktok_link}>
-                <SiTiktok id="socialiconspace" style={{fill: 'black'}}/>
+              <a href={data.siteYaml.tiktok_link} className={homeStyles.tiktok}>
+                <SiTiktok id="socialiconspace" />
               </a>
+             
             </Col>
           </Row>
          {/*} </div>*/}
@@ -74,6 +80,7 @@ const HomeCard = ({data}) => (
           </p>
 <p className={homeStyles.frontTextBody}>Lorem ipsum dolor sit amet</p>*/}
         </Card.Text>
+        </Fade>
       </div>
     </Card.Body>
     <Card.Footer>

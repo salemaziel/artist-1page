@@ -8,11 +8,14 @@ import { FaApple, FaSpotify, FaSoundcloud, FaShoppingCart, FaYoutubeSquare  } fr
 import { SiTidal } from "react-icons/si";
 import { Link } from 'gatsby'
 
+import Fade from 'react-reveal/Fade'
+
 const BioButtons = ({data}) => (
 <>
 <Container>
 <Row>
 <Col>
+{/*<Fade top cascade>*/}
 <Buttonz spotify href={data.siteYaml.spotify_link} className="" >
     <FaSpotify id="iconspace"/>
 Spotify
@@ -43,7 +46,7 @@ Tidal Music
 Shop Merch
 </Buttonz>
 <br />
-
+{/*</Fade>*/}
 
 </Col>
 </Row>

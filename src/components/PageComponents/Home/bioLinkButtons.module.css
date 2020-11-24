@@ -1,0 +1,23 @@
+.tiktok {
+    padding: inherit;
+}
+
+.tiktok svg {
+    fill: black;
+}
+
+.shop svg:focus,
+.shop svg:hover,
+.shop svg:focus-within,
+.shop svg:focus-visible,
+.shop svg:active {
+    fill: red;
+}
+
+.tiktok svg:focus,
+.tiktok svg:hover,
+.tiktok svg:focus-within,
+.tiktok svg:focus-visible,
+.tiktok svg:active {
+    fill: #84c7cd;
+}

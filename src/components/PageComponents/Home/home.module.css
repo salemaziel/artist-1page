@@ -14,7 +14,7 @@
 .frontText {
   position: relative;
   margin: 0 auto;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   padding: 5px;
 }
@@ -51,7 +51,7 @@
 }
 
 .Icon {
-  margin: 0 auto -7px auto;
+  margin: auto;
   font-size: 1.5rem;
 }
 
@@ -86,4 +86,60 @@
 .CardStyle {
     text-align: center;
     box-shadow: 5px 5px 15px 5px black;
+}
+
+.facebook svg {
+  fill:black;
+}
+
+.facebook svg:focus,
+.facebook svg:hover,
+.facebook svg:focus-within,
+.facebook svg:focus-visible,
+.facebook svg:active {
+    fill: #1877f2;
+}
+
+
+
+.instagram svg {
+  fill:black;
+}
+
+.instagram svg:focus,
+.instagram svg:hover,
+.instagram svg:focus-within,
+.instagram svg:focus-visible,
+.instagram svg:active {
+    fill: #b43aa0;
+}
+
+.snapchat svg {
+  fill:black;
+}
+
+.snapchat svg:focus,
+.snapchat svg:hover,
+.snapchat svg:focus-within,
+.snapchat svg:focus-visible,
+.snapchat svg:active {
+    fill: #efed2f;
+}
+
+
+
+
+
+
+
+.tiktok svg {
+  fill:black;
+}
+
+.tiktok svg:focus,
+.tiktok svg:hover,
+.tiktok svg:focus-within,
+.tiktok svg:focus-visible,
+.tiktok svg:active {
+    fill: #84c7cd;
 }
